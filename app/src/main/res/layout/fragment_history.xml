@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    tools:context           = ".ui.history.HistoryFragment">
+
+    <ScrollView
+        android:layout_width    = "match_parent"
+        android:layout_height   = "match_parent">
+        <LinearLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "25dp"
+            android:layout_marginLeft   = "20dp"
+            android:layout_marginRight  = "20dp"
+            android:orientation         = "vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/simakUi"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <TextView
+                    android:id                              = "@+id/history_1"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    android:text                            = "Histori Pembelian"
+                    android:textSize                        = "12dp"
+                    android:textColor                       = "#DE9118"
+                    android:textAlignment                   = "textEnd"/>
+                <TextView
+                    android:id                              = "@+id/textView_historyTitle_1"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    android:text                            = "SIMAK UI"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:id                              = "@+id/textView_historyDesc_1"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_historyTitle_1"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:layout_marginTop                = "5dp"
+                    android:layout_marginStart              = "15dp"
+                    android:text                            = "Berlaku Hingga: 28 Desember 2023"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_historyDesc_1"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    android:text                            = "Detail Paket"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/utbk"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <TextView
+                    android:id                              = "@+id/history_2"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    android:text                            = "Histori Pembelian"
+                    android:textSize                        = "12dp"
+                    android:textColor                       = "#DE9118"
+                    android:textAlignment                   = "textEnd"/>
+                <TextView
+                    android:id                              = "@+id/textView_historyTitle_2"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    android:text                            = "UTBK 2023"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:id                              = "@+id/textView_historyDesc_2"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_historyTitle_2"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:layout_marginTop                = "5dp"
+                    android:layout_marginStart              = "15dp"
+                    android:text                            = "Berlaku Hingga: 28 Desember 2023"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_historyDesc_2"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    android:text                            = "Detail Paket"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

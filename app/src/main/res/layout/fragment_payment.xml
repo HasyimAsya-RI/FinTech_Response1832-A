@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    tools:context           = ".ui.payment.PaymentFragment">
+
+    <ScrollView
+        android:layout_width    = "match_parent"
+        android:layout_height   = "match_parent">
+        <LinearLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "25dp"
+            android:layout_marginLeft   = "20dp"
+            android:layout_marginRight  = "20dp"
+            android:orientation         = "vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/utbk"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <ImageView
+                    android:layout_width                    = "100dp"
+                    android:layout_height                   = "23dp"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:src                             = "@drawable/flash_sale"/>
+                <TextView
+                    android:id                              = "@+id/textView_payment_1"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "UTBK 2023"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_1"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 MATERI"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp999.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#FF0000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/sma"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <ImageView
+                    android:layout_width                    = "100dp"
+                    android:layout_height                   = "23dp"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:src                             = "@drawable/flash_sale"/>
+                <TextView
+                    android:id                              = "@+id/textView_payment_2"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "SEKOLAH MENENGAH ATAS"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_2"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 SMA/SMK"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp499.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#FF0000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/smp"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <ImageView
+                    android:layout_width                    = "100dp"
+                    android:layout_height                   = "23dp"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:src                             = "@drawable/flash_sale"/>
+                <TextView
+                    android:id                              = "@+id/textView_payment_3"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "SEKOLAH MENENGAH PERTAMA"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_3"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 SMP"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp399.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#FF0000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/sd"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <ImageView
+                    android:layout_width                    = "100dp"
+                    android:layout_height                   = "23dp"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginEnd                = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintEnd_toEndOf        = "parent"
+                    android:src                             = "@drawable/flash_sale"/>
+                <TextView
+                    android:id                              = "@+id/textView_payment_4"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "SEKOLAH DASAR"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_4"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 SD"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp299.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#FF0000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/simakUi"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <TextView
+                    android:id                              = "@+id/textView_payment_5"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "SIMAK UI"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_5"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 MANDIRI"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp1.499.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id                  = "@+id/pmbAmikom"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "115dp"
+                android:layout_marginTop    = "10dp"
+                android:background          = "@drawable/bgeditlayout"
+                android:backgroundTint      = "#DFDFDF">
+                <TextView
+                    android:id                              = "@+id/textView_payment_6"
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "15dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "PMB AMIKOM"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "#DE9118"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginTop                = "10dp"
+                    android:layout_marginStart              = "15dp"
+                    app:layout_constraintTop_toBottomOf     = "@+id/textView_payment_6"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    android:text                            = "AsyaRI 1 Tahun Ajaran 2022/2023 MANDIRI"
+                    android:textSize                        = "12dp"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+                <TextView
+                    android:layout_width                    = "wrap_content"
+                    android:layout_height                   = "wrap_content"
+                    android:layout_marginStart              = "15dp"
+                    android:layout_marginBottom             = "15dp"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintBottom_toBottomOf  = "parent"
+                    android:text                            = "Rp999.000"
+                    android:textStyle                       = "bold"
+                    android:textColor                       = "@color/black"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

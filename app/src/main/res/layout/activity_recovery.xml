@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:background      = "@drawable/bg_main"
+    tools:context           = ".RecoveryActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id                              = "@+id/linearLayout_header"
+        android:layout_width                    = "match_parent"
+        android:layout_height                   = "50dp"
+        app:layout_constraintTop_toTopOf        = "parent"
+        app:layout_constraintStart_toStartOf    = "parent"
+        app:layout_constraintEnd_toEndOf        = "parent"
+        android:background                      = "@color/white"
+        android:orientation                     = "horizontal">
+        <ImageView
+            android:id                              = "@+id/backTo_main"
+            android:layout_width                    = "25dp"
+            android:layout_height                   = "match_parent"
+            android:layout_marginStart              = "20dp"
+            android:src                             = "@drawable/ic_arrow_back_24"
+            tools:ignore                            = "OnClick"/>
+        <TextView
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "match_parent"
+            android:layout_marginStart              = "15dp"
+            android:text                            = "Atur Ulang Kata Sandi"
+            android:textSize                        = "18dp"
+            android:textColor                       = "@color/black"
+            android:gravity                         = "center"
+            android:textAlignment                   = "viewStart"
+            tools:ignore                            = "RtlCompat"/>
+    </LinearLayout>
+
+    <!-- Form Recovery -->
+    <LinearLayout
+        android:layout_width                    = "match_parent"
+        android:layout_height                   = "wrap_content"
+        android:layout_marginTop                = "100dp"
+        android:layout_marginLeft               = "20dp"
+        android:layout_marginRight              = "20dp"
+        app:layout_constraintTop_toBottomOf     = "@+id/linearLayout_header"
+        app:layout_constraintStart_toStartOf    = "parent"
+        app:layout_constraintEnd_toEndOf        = "parent"
+        android:orientation                     = "vertical">
+        <TextView
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "wrap_content"
+            android:text                            = "Silakan masukkan alamat email atau nomor ponsel Anda untuk mencari akun Anda."
+            android:textColor                       = "@color/white"/>
+        <EditText
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "60dp"
+            android:layout_marginTop                = "20dp"
+            android:paddingStart                    = "20dp"
+            android:hint                            = "Email/no. telepon"
+            android:textColorHint                   = "#808080"
+            android:background                      = "@drawable/bgedittext"
+            android:backgroundTint                  = "@color/white"/>
+        <Button
+            android:id                              = "@+id/btn_change"
+            android:layout_width                    = "match_parent"
+            android:layout_height                   = "70dp"
+            android:layout_marginTop                = "20dp"
+            android:text                            = "Ubah Kata Sandi"
+            android:textSize                        = "18dp"
+            android:textStyle                       = "bold"
+            android:textColor                       = "@color/white"
+            android:backgroundTint                  = "@color/black"
+            app:cornerRadius                        = "175dp"
+            android:textAllCaps                     = "false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
