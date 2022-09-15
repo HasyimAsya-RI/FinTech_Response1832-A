@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fintech_response1832">
+    package="com.example.fintech1832_response1">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinTechResponse1832">
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.example.fintech1832_response1.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".RecoveryActivity"
+            android:name="com.example.fintech1832_response1.RecoveryActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.HomeActivity"
+            android:name="com.example.fintech1832_response1.ui.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.fintech1832_response1.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

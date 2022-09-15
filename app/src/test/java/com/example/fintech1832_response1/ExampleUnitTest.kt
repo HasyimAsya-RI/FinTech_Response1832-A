@@ -1,4 +1,4 @@
-package com.example.fintech_response1832
+package com.example.fintech1832_response1
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android           = "http://schemas.android.com/apk/res/android"
     xmlns:app               = "http://schemas.android.com/apk/res-auto"
@@ -10,116 +10,115 @@
 
     <!-- Logo -->
     <ImageView
-        android:id                              = "@+id/imageView_logo"
-        android:layout_width                    = "match_parent"
-        android:layout_height                   = "50dp"
-        android:layout_marginTop                = "100dp"
+        android:id                  = "@+id/img_logo"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "50dp"
+        android:layout_marginTop    = "75dp"
+        android:src                 = "@drawable/asyari"
         app:layout_constraintTop_toTopOf        = "parent"
         app:layout_constraintStart_toStartOf    = "parent"
-        app:layout_constraintEnd_toEndOf        = "parent"
-        android:src                             = "@drawable/asyari"/>
+        app:layout_constraintEnd_toEndOf        = "parent" />
 
     <LinearLayout
-        android:layout_width                    = "match_parent"
-        android:layout_height                   = "wrap_content"
-        app:layout_constraintTop_toBottomOf     = "@+id/imageView_logo"
-        android:layout_marginTop                = "50dp"
-        android:layout_marginLeft               = "20dp"
-        android:layout_marginRight              = "20dp"
-        android:orientation                     = "vertical">
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "50dp"
+        android:layout_marginLeft   = "20dp"
+        android:layout_marginRight  = "20dp"
+        android:orientation         = "vertical"
+        app:layout_constraintTop_toBottomOf     = "@+id/img_logo">
 
         <!-- Form Login -->
         <EditText
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "60dp"
-            android:paddingStart                    = "20dp"
-            android:hint                            = "Email/no. telepon"
-            android:textColorHint                   = "#808080"
-            android:background                      = "@drawable/bgedittext"
-            android:backgroundTint                  = "@color/white"/>
+            android:layout_width        = "match_parent"
+            android:layout_height       = "50dp"
+            android:paddingStart        = "20dp"
+            android:hint                = "Email/no. telepon"
+            android:textColorHint       = "#808080"
+            android:background          = "@drawable/bgedittext"
+            android:backgroundTint      = "@color/white" />
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "wrap_content"
-            app:passwordToggleEnabled               = "true">
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            app:passwordToggleEnabled   = "true">
             <EditText
-                android:layout_width                    = "match_parent"
-                android:layout_height                   = "60dp"
-                android:layout_marginTop                = "20dp"
-                android:paddingStart                    = "20dp"
-                android:inputType                       = "textPassword"
-                android:hint                            = "Kata sandi"
-                android:textSize                        = "18dp"
-                android:textColorHint                   = "#808080"
-                android:background                      = "@drawable/bgedittext"
-                android:backgroundTint                  = "@color/white"/>
+                android:layout_width        = "match_parent"
+                android:layout_height       = "50dp"
+                android:layout_marginTop    = "15dp"
+                android:paddingStart        = "20dp"
+                android:inputType           = "textPassword"
+                android:hint                = "Kata sandi"
+                android:textSize            = "18dp"
+                android:textColorHint       = "#808080"
+                android:background          = "@drawable/bgedittext"
+                android:backgroundTint      = "@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
         <Button
-            android:id                              = "@+id/btn_login"
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "70dp"
-            android:layout_marginTop                = "20dp"
-            android:text                            = "Masuk"
-            android:textSize                        = "18dp"
-            android:textStyle                       = "bold"
-            android:textColor                       = "@color/white"
-            android:backgroundTint                  = "@color/black"
-            app:cornerRadius                        = "175dp"
-            android:textAllCaps                     = "false"/>
+            android:id                  = "@+id/btn_login"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "60dp"
+            android:layout_marginTop    = "15dp"
+            android:text                = "Masuk"
+            android:textSize            = "18dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/white"
+            android:backgroundTint      = "@color/black"
+            app:cornerRadius            = "175dp"
+            android:textAllCaps         = "false" />
 
         <!-- Register and Forgot Password -->
         <RelativeLayout
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "wrap_content"
-            android:layout_marginTop                = "15dp"
-            android:layout_marginLeft               = "10dp"
-            android:layout_marginRight              = "10dp">
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            android:layout_marginLeft   = "10dp"
+            android:layout_marginRight  = "10dp">
             <TextView
-                android:onClick                         = "register"
-                android:layout_width                    = "wrap_content"
-                android:layout_height                   = "wrap_content"
-                android:text                            = "Daftar Sekarang"
-                android:textColor                       = "@color/white"
-                tools:ignore                            = "OnClick"/>
+                android:onClick             = "register"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "wrap_content"
+                android:text                = "Daftar Sekarang"
+                android:textColor           = "@color/white"
+                tools:ignore                = "OnClick" />
             <TextView
-                android:onClick                         = "forgot"
-                android:layout_width                    = "wrap_content"
-                android:layout_height                   = "wrap_content"
-                android:layout_alignParentRight         = "true"
-                android:text                            = "Lupa Kata Sandi"
-                android:textColor                       = "@color/white"
-                tools:ignore                            = "OnClick"/>
+                android:onClick             = "recovery"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "wrap_content"
+                android:text                = "Lupa Kata Sandi"
+                android:textColor           = "@color/white"
+                tools:ignore                = "OnClick"
+                android:layout_alignParentRight         = "true" />
         </RelativeLayout>
 
         <!-- Login Another Service -->
         <TextView
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "wrap_content"
-            android:layout_marginTop                = "50dp"
-            android:text                            = "Atau masuk dengan"
-            android:textSize                        = "18dp"
-            android:textStyle                       = "bold"
-            android:textColor                       = "@color/white"
-            android:gravity                         = "center"/>
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "50dp"
+            android:text                = "Atau masuk dengan"
+            android:textSize            = "18dp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/white"
+            android:gravity             = "center" />
         <LinearLayout
-            android:layout_width                    = "match_parent"
-            android:layout_height                   = "wrap_content"
-            android:layout_marginTop                = "10dp"
-            android:gravity                         = "center"
-            android:orientation                     = "horizontal">
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            android:gravity             = "center"
+            android:orientation         = "horizontal">
             <ImageView
-                android:id                              = "@+id/login_google"
-                android:layout_width                    = "60dp"
-                android:layout_height                   = "60dp"
-                android:src                             = "@drawable/logo_google"
-                tools:ignore                            = "OnClick"/>
+                android:id                  = "@+id/img_loginGoogle"
+                android:layout_width        = "60dp"
+                android:layout_height       = "60dp"
+                android:src                 = "@drawable/logo_google" />
             <ImageView
-                android:id                              = "@+id/login_twitter"
-                android:layout_width                    = "60dp"
-                android:layout_height                   = "60dp"
-                android:layout_marginLeft               = "15dp"
-                android:src                             = "@drawable/logo_twitter"
-                tools:ignore                            = "OnClick"/>
+                android:id                  = "@+id/img_loginTwitter"
+                android:layout_width        = "60dp"
+                android:layout_height       = "60dp"
+                android:layout_marginLeft   = "15dp"
+                android:src                 = "@drawable/logo_twitter" />
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

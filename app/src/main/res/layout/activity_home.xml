@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <LinearLayout
     xmlns:android           = "http://schemas.android.com/apk/res/android"
     xmlns:app               = "http://schemas.android.com/apk/res-auto"
@@ -12,118 +12,116 @@
     <!-- Header -->
     <RelativeLayout
         android:layout_width        = "match_parent"
-        android:layout_height       = "77dp"
+        android:layout_height       = "70dp"
         android:layout_marginLeft   = "20dp"
         android:layout_marginRight  = "20dp">
         <ImageView
-            android:id                      = "@+id/asyari"
-            android:layout_width            = "149dp"
-            android:layout_height           = "50dp"
-            android:src                     = "@drawable/asyari_bnw"
-            android:layout_centerVertical   = "true"
-            tools:ignore                    = "OnClick"/>
+            android:id                  = "@+id/img_asyari"
+            android:layout_width        = "149dp"
+            android:layout_height       = "50dp"
+            android:src                 = "@drawable/asyari_bnw"
+            android:layout_centerVertical           = "true" />
         <ImageView
-            android:id                      = "@+id/profile"
-            android:layout_width            = "51dp"
-            android:layout_height           = "50dp"
-            android:src                     = "@drawable/profile_v2"
-            android:layout_alignParentRight = "true"
-            android:layout_centerVertical   = "true"
-            tools:ignore                    = "OnClick"/>
+            android:id                  = "@+id/img_profile"
+            android:layout_width        = "51dp"
+            android:layout_height       = "50dp"
+            android:src                 = "@drawable/profile_v2"
+            android:layout_alignParentRight         = "true"
+            android:layout_centerVertical           = "true" />
     </RelativeLayout>
 
     <!-- Main -->
     <ScrollView
         android:layout_width        = "match_parent"
-        android:layout_height       = "545dp">
+        android:layout_height       = "445dp">
         <FrameLayout
-            android:id                      = "@+id/container"
-            android:layout_width            = "match_parent"
-            android:layout_height           = "match_parent"
-            android:layout_weight           = "1"
-            android:orientation             = "vertical"/>
+            android:id                  = "@+id/container"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent"
+            android:layout_weight       = "1"
+            android:orientation         = "vertical" />
     </ScrollView>
 
     <!-- Menu Bar -->
     <androidx.cardview.widget.CardView
         android:layout_width        = "match_parent"
         android:layout_height       = "match_parent"
-        android:layout_marginTop    = "25dp"
+        android:layout_marginTop    = "10dp"
         android:backgroundTint      = "#FED900">
         <LinearLayout
-            android:layout_width            = "match_parent"
-            android:layout_height           = "match_parent"
-            android:layout_marginTop        = "10dp"
-            android:layout_marginLeft       = "20dp"
-            android:layout_marginRight      = "20dp"
-            android:layout_marginBottom     = "10dp"
-            android:orientation             = "horizontal">
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent"
+            android:layout_marginTop    = "10dp"
+            android:layout_marginLeft   = "20dp"
+            android:layout_marginRight  = "20dp"
+            android:layout_marginBottom = "10dp"
+            android:orientation         = "horizontal">
             <LinearLayout
-                android:id                      = "@+id/menuBar_home"
-                android:layout_width            = "85dp"
-                android:layout_height           = "match_parent"
-                android:orientation             = "vertical">
+                android:id                  = "@+id/lin_menuHome"
+                android:layout_width        = "77dp"
+                android:layout_height       = "match_parent"
+                android:orientation         = "vertical">
                 <ImageView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "20dp"
-                    android:src                     = "@drawable/ic_home_active"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "20dp"
+                    android:src                 = "@drawable/ic_home_active" />
                 <TextView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "wrap_content"
-                    android:text                    = "Beranda"
-                    android:textColor               = "@color/black"
-                    android:gravity                 = "center"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Beranda"
+                    android:textColor           = "@color/black"
+                    android:gravity             = "center" />
             </LinearLayout>
             <LinearLayout
-                android:id                      = "@+id/menuBar_payment"
-                android:layout_width            = "85dp"
-                android:layout_height           = "match_parent"
-                android:layout_marginLeft       = "3dp"
-                android:orientation             = "vertical">
+                android:id                  = "@+id/lin_menuPayment"
+                android:layout_width        = "77dp"
+                android:layout_height       = "match_parent"
+                android:layout_marginLeft   = "4dp"
+                android:orientation         = "vertical">
                 <ImageView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "20dp"
-                    android:src                     = "@drawable/ic_payment_active"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "20dp"
+                    android:src                 = "@drawable/ic_payment_active" />
                 <TextView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "wrap_content"
-                    android:text                    = "Pembelian"
-                    android:textColor               = "@color/black"
-                    android:gravity                 = "center"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Pembelian"
+                    android:textColor           = "@color/black"
+                    android:gravity             = "center" />
             </LinearLayout>
             <LinearLayout
-                android:id                      = "@+id/menuBar_history"
-                android:layout_width            = "85dp"
-                android:layout_height           = "match_parent"
-                android:layout_marginLeft       = "4dp"
-                android:orientation             = "vertical">
+                android:id                  = "@+id/lin_menuHistory"
+                android:layout_width        = "77dp"
+                android:layout_height       = "match_parent"
+                android:layout_marginLeft   = "4dp"
+                android:orientation         = "vertical">
                 <ImageView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "20dp"
-                    android:src                     = "@drawable/ic_history_active"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "20dp"
+                    android:src                 = "@drawable/ic_history_active" />
                 <TextView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "wrap_content"
-                    android:text                    = "Riwayat"
-                    android:textColor               = "@color/black"
-                    android:gravity                 = "center"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Riwayat"
+                    android:textColor           = "@color/black"
+                    android:gravity             = "center" />
             </LinearLayout>
             <LinearLayout
-                android:id                      = "@+id/menuBar_setting"
-                android:layout_width            = "85dp"
-                android:layout_height           = "match_parent"
-                android:layout_marginLeft       = "3dp"
-                android:orientation             = "vertical">
+                android:id                  = "@+id/lin_menuSetting"
+                android:layout_width        = "77dp"
+                android:layout_height       = "match_parent"
+                android:layout_marginLeft   = "4dp"
+                android:orientation         = "vertical">
                 <ImageView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "20dp"
-                    android:src                     = "@drawable/ic_setting_v2_active"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "20dp"
+                    android:src                 = "@drawable/ic_setting_v2_active" />
                 <TextView
-                    android:layout_width            = "match_parent"
-                    android:layout_height           = "wrap_content"
-                    android:text                    = "Pengaturan"
-                    android:textColor               = "@color/black"
-                    android:gravity                 = "center"/>
+                    android:layout_width        = "match_parent"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "Pengaturan"
+                    android:textColor           = "@color/black"
+                    android:gravity             = "center" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

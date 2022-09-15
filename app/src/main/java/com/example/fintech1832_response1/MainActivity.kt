@@ -1,4 +1,4 @@
-package com.example.fintech_response1832
+package com.example.fintech1832_response1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,16 +6,17 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
-import com.example.fintech_response1832.ui.HomeActivity
+import com.example.fintech1832_response1.ui.HomeActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate( savedInstanceState: Bundle? ) {
+        getSupportActionBar()?.hide()
         super.onCreate( savedInstanceState )
         setContentView( R.layout.activity_main )
 
-        val btnLogin:       Button    = findViewById( R.id.btn_login )
-        val loginGoogle:    ImageView = findViewById( R.id.login_google )
-        val loginTwitter:   ImageView = findViewById( R.id.login_twitter )
+        val btnLogin:     Button    = findViewById( R.id.btn_login )
+        val loginGoogle:  ImageView = findViewById( R.id.img_loginGoogle )
+        val loginTwitter: ImageView = findViewById( R.id.img_loginTwitter )
 
         btnLogin.setOnClickListener {
             val intent = Intent( this, HomeActivity::class.java )
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val intent = android.content.Intent( this, RegisterActivity::class.java )
         startActivity( intent )
     }
-    fun forgot( view: View ) {
+    fun recovery( view: View ) {
         val intent = android.content.Intent( this, RecoveryActivity::class.java )
         startActivity( intent )
     }

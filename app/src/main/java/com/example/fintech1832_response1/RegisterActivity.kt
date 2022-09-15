@@ -1,24 +1,24 @@
-package com.example.fintech_response1832
+package com.example.fintech1832_response1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
-import com.example.fintech_response1832.ui.HomeActivity
+import com.example.fintech1832_response1.ui.HomeActivity
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate( savedInstanceState: Bundle? ) {
+        getSupportActionBar()?.hide()
         super.onCreate( savedInstanceState )
         setContentView( R.layout.activity_register )
 
-        val backtoMain:         ImageView = findViewById( R.id.backTo_main )
-        val btnRegister:        Button    = findViewById( R.id.btn_register )
-        val registerGoogle:     ImageView = findViewById( R.id.register_google )
-        val registerTwitter:    ImageView = findViewById( R.id.register_twitter )
+        val backtoLogin:     ImageView = findViewById( R.id.img_back )
+        val btnRegister:     Button    = findViewById( R.id.btn_register )
+        val registerGoogle:  ImageView = findViewById( R.id.img_registerGoogle )
+        val registerTwitter: ImageView = findViewById( R.id.img_registerTwitter )
 
-        backtoMain.setOnClickListener {
+        backtoLogin.setOnClickListener {
             val intent = Intent( this, MainActivity::class.java )
             startActivity( intent )
         }

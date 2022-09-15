@@ -1,4 +1,4 @@
-<?xml version   = "1.0" encoding   = "utf-8"?>
+<?xml version = "1.0" encoding = "utf-8"?>
 <FrameLayout
     xmlns:android           = "http://schemas.android.com/apk/res/android"
     xmlns:app               = "http://schemas.android.com/apk/res-auto"
@@ -8,35 +8,37 @@
     tools:context           = ".ui.setting.SettingFragment">
 
     <ScrollView
-        android:layout_width    = "match_parent"
-        android:layout_height   = "match_parent"
-        android:layout_margin   = "30dp">
+        android:layout_width        = "match_parent"
+        android:layout_height       = "match_parent"
+        android:layout_margin       = "30dp">
         <LinearLayout
             android:layout_width        = "match_parent"
             android:layout_height       = "match_parent"
-            android:layout_marginTop    = "50dp"
+            android:layout_marginTop    = "25dp"
             android:orientation         = "vertical">
 
             <ImageView
                 android:layout_width        = "match_parent"
-                android:layout_height       = "200dp"
-                android:src                 = "@drawable/error"/>
+                android:layout_height       = "150dp"
+                android:src                 = "@drawable/error" />
+
             <TextView
                 android:layout_width        = "match_parent"
                 android:layout_height       = "wrap_content"
-                android:layout_marginTop    = "50dp"
+                android:layout_marginTop    = "25dp"
                 android:text                = "Oops!!!"
                 android:textSize            = "30dp"
                 android:textStyle           = "bold"
                 android:textColor           = "@color/black"
-                android:gravity             = "center"/>
+                android:gravity             = "center" />
             <TextView
                 android:layout_width        = "match_parent"
                 android:layout_height       = "wrap_content"
                 android:layout_marginTop    = "10dp"
                 android:text                = "Halaman sedang dalam pembuatan, mohon mencoba beberapa saat lagi. :("
-                android:textSize            = "18dp"
-                android:gravity             = "center"/>
+                android:textSize            = "15dp"
+                android:gravity             = "center" />
+
         </LinearLayout>
     </ScrollView>
 

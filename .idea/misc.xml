@@ -9,14 +9,14 @@
         <entry key="app/src/main/res/drawable/bgedittext.xml" value="0.101" />
         <entry key="app/src/main/res/drawable/ic_arrow_back_24.xml" value="0.1585" />
         <entry key="app/src/main/res/drawable/sample_bgedit.xml" value="0.1555" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.15462962962962962" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22207207207207208" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/activity_recovery.xml" value="0.22207207207207208" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.22962962962962963" />
-        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.2212962962962963" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2212962962962963" />
-        <entry key="app/src/main/res/layout/fragment_payment.xml" value="0.21911111111111112" />
-        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.2212962962962963" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.25092592592592594" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/fragment_payment.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.21274799493457155" />
         <entry key="app/src/main/res/layout/sample.xml" value="0.25677083333333334" />
       </map>
     </option>
